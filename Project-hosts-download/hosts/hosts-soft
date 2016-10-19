@@ -1,0 +1,20 @@
+#soft#
+127.0.0.1 activation.cloud.techsmith.com
+127.0.0.1 oscount.techsmith.com
+#microsoft-update#
+157.56.67.214 windowsupdate.microsoft.com
+157.56.67.214 www.update.microsoft.com
+157.56.77.156 update.microsoft.com
+157.56.67.214 v4.windowsupdate.microsoft.com
+157.56.67.214 v5.windowsupdate.microsoft.com
+# Speedtest
+110.232.178.82	a.speedtest.net
+110.232.178.82	b.speedtest.net
+117.18.232.133	c.speedtest.net
+110.232.178.82	d.speedtest.net
+# 216.146.46.11	speedtest.net
+110.232.178.82	www.speedtest.net
+110.232.178.82 beta.speedtest.net
+
+
+

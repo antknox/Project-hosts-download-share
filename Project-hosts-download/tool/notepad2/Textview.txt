@@ -1,0 +1,296 @@
+
+=======================================================================
+=                                                                     =
+=                                                                     =
+=    Textview 6.0 - The Explorer-like Text File Viewer                =
+=                                                                     =
+=                                                                     =
+=                                                   Textview 6.0.12   =
+=                                      (c) Florian Balmer 1996-2004   =
+=                                       http://www.flos-freeware.ch   =
+=                                                                     =
+=                                                                     =
+=======================================================================
+
+
+Description
+
+  Textview is a handy software program for Windows 9x/Me/NT/2k/XP to
+  quickly review large collections of text files, like i.e. CD-ROMs
+  full of source codes or extensive web-projects with many html-, java-
+  and other scripts.
+
+
+Features
+
+  * Explorer-like browser window
+  * Display Unicode, UTF-8, UTF-7 and Mac text files
+  * Back, forward, run and quickview commands
+  * Create new file, save as, delete
+  * Open shell links
+  * Drag & Drop support
+  * Favorites management
+  * Mostly adjustable
+
+
+New in Version 6.0.12
+
+  * Full Windows XP theme support
+  * Full Unicode display support (Windows NT/2k/XP)
+  * Unicode Big Endian text file support
+  * UTF-8 and UTF-7 text file support
+  * Mac text file support (Windows NT/2k/XP)
+  * Hexadecimal file display mode
+  * Recent file dialog
+  * Optionally set file size limit
+  * Copy text to clipboard with Windows linebreak format
+  * Set tab stop width
+  * Detect hyperlinks
+  * Support "Terminal" font
+  * Customizable toolbar with new buttons
+  * Negative filter option
+  * More file display options (colors, mouse-tracking, ...)
+  * Fade hidden files, mark shared folders
+  * Minimize to tray option
+  * New command line parameters /p, /m and /i
+  * Better performance with multithreading architecture
+  * Fixed crash on Windows 98
+  * Various minor updates and fixes
+
+
+New in Version 5.0.11
+
+  * Custom file filters can be specified
+  * Directory history
+  * Copy, move and rename commands
+  * Create shell links, files and directories
+  * Launch and open with... commands
+  * Some new options
+  * Better text navigation hotkeys
+  * Append text to clipboard
+  * More modern design
+
+
+Installation and Uninstallation
+
+  Just put a copy of Textview.exe to any directory on your computer.
+  To remove the Textview registry entries, type "Textview.exe /u" at a
+  command prompt. Then you can delete Textview.exe to have a complete,
+  traceless uninstall.
+
+
+Runtime DLLs
+
+  Textview requires the msvcr70.dll and msftedit.dll runtime libraries.
+  If these files are not present on your machine, you can download them
+  from http://www.flos-freeware.ch and put a copy either into your
+  system directory or into the same directory as Textview.exe.
+
+
+List of Keycodes for Textview 6.0
+
+  Enter           Open selected object.
+  Shift+Enter     Open, but don't resolve links.
+  Alt+Enter       Properties of selected object.
+  Backspace       Move to upper directory.
+  Ctrl+Backspace  Move to root directory.
+  Alt+Left        Go to previous directory.
+  Alt+Right       Go to next directory.
+  Tab             Move to next control.
+  Shift+Tab       Move to previous control.
+  Esc             Exit or minimize Textview (optional).
+  Ctrl+A          Select whole text.
+  Ctrl+B          Convert binary character to spaces.
+  Ctrl+C          Copy text to clipboard.
+  Ctrl+D          Change to another directory.
+  Ctrl+E          Open file with specified editor.
+  Ctrl+F          Find text.
+  Ctrl+G          Goto dialog.
+  Ctrl+H          Save settings.
+  Ctrl+I          Display program information.
+  Ctrl+J          Jump to line number.
+  Ctrl+K          Create link.
+  Ctrl+L          Launch selected file.
+  Ctrl+M          Specify file filter.
+  Ctrl+N          Create new file.
+  Ctrl+O          Convert OEM text to ANSI.
+  Ctrl+P          Change current font.
+  Ctrl+Q          Open file with specified quickviewer.
+  Ctrl+R          Open run dialog box.
+  Ctrl+S          Save file to new location.
+  Ctrl+T          Toggle current and secondary font.
+  Ctrl+U          Unicode character set conversion.
+  Ctrl+V          Browse My Computer.
+  Ctrl+W          Toggle word wrap mode.
+  Ctrl+X          Display hexadecimal view of file.
+  Ctrl+Y          Browse My Documents.
+  Ctrl+Z          Goto recent file.
+  Ctrl+1          Sort files by name.
+  Ctrl+2          Sort files by size.
+  Ctrl+3          Sort files by type.
+  Ctrl+4          Sort files by date.
+  Ctrl+5          Sort files in reverse order.
+  Ctrl+7          UTF-7 character set conversion.
+  Ctrl+8          UTF-8 character set conversion.
+  Ctrl+9          Display standard ANSI characters only.
+  Ctrl+0          Use defeault codepage.
+  Alt+0           Auto-detect Unicode and UTF-8 charsets.
+  Alt+A           Copy whole text to clipboard.
+  Alt+D           Create new directory.
+  Alt+G           Goto link target.
+  Alt+K           Create link to selected object in "Favorites" folder.
+  Alt+L           Open selected file with another application.
+  Alt+M           Use Mac code page.
+  Alt+N           Open new window.
+  Alt+S           Toggle statusbar.
+  Alt+T           Toggle toolbar.
+  Alt+U           Toggle drive box.
+  Alt+W           Browse My Network.
+  Alt++           Append text to clipboard.
+  Del             Delete selected object.
+  Shift+Del       Delete selected object (no recycling).
+  Ctrl+Shift+Del  Delete file without confirmation.
+  Ctrl+Del        Clear displayed text.
+  Ctrl+Up         Scroll text up.
+  Ctrl+Down       Scroll text down.
+  Ctrl+PageUp     Scroll text one page up.
+  Ctrl+PageDown   Scroll text one page down.
+  Ctrl+Home       Scroll text to the beginning.
+  Ctrl+End        Scroll text to the end.
+  Ctrl+Space      Scroll text one page down.
+  Ctrl++          Enlarge font size.
+  Ctrl+-          Reduce font size.
+  Ctrl+*          Set file filter to *.*
+  Ctrl+Shift++    Increase number of columns in directory view.
+  Ctrl+Shift+-    Decrease number of columns in directory view.
+  Alt+Up          Goto next file.
+  Alt+Down        Goto previous file.
+  F1              Display readme file.
+  F2              Rename seletced object.
+  F3              Find next.
+  F4              Go to currently displayed file.
+  Ctrl+F4         Clear displayed text.
+  Shift+F3        Find previous.
+  F5              Update view of directory.
+  F6              Copy/move selected object to another location.
+  F7              Edit "Favorites" folder.
+  F8              View text statistics.
+  Ctrl+F8         Set maximum number of megabytes to load from files.
+  F9              Reload current file.
+  F11             Jump to "Favorites" folder.
+  F12             View program settings.
+  Enter           Exit split mode and apply new frame width.
+  Esc             Cancel split mode.
+
+
+Tips and Tricks, Special Features, Limitations
+
+  Setting more Options and Custom Filters
+
+  The Textview.reg file contains additional program settings that must
+  be modified directly in the registry. These settings include custom
+  filters for the drop-down menu of the filter dialog and customization
+  options for the toolbar bitmaps and texts. Inspect Textview.reg to
+  find more explanations.
+
+
+  The "Show - System Objects" Command
+
+  System objects are not only files with the system and/or hidden
+  attributes set, but also binary files and device drivers not relevant
+  to the user, exactly as in Windows Explorer.
+
+
+  The "Fixedsys" Font
+
+  Note that the "Fixedsys" font - and some others - support only very
+  few font sizes. The "Enlarge/Reduce Font Size" commands have no
+  effect with nonsupported font sizes.
+
+
+  Supported Pathnames
+
+  Textview supports UNC pathnames like i.e. \\comp\share. You can
+  specify them as command line parameters or use the "File -
+  Directory" command to access shared resources on other network
+  computers. Moreover, pathnames can be relative or may contain
+  environment variables. Long names containing blanks must be put into
+  quotation marks, as usual for Windows (but not in the "Options"
+  dialog box).
+
+
+  Command Line Parameters
+
+  Textview.exe [file|dir]
+               [/n] [/f] [/u] [/i]
+               [/m [-]FileSpec[;FileSpec2][...]]
+               [/p x,y,cx,cy[,max]]
+
+    file|dir: File or directory to open, can be a relative pathname.
+    /n: Always open a new Textview window, even if the "reuse-window"
+        option is on.
+    /f: Jump to "Favorites" folder at startup.
+    /u: Remove the registry entries created by Textview.
+    /i: Start as tray icon.
+    /m: Specify multiple file filters separated by ; and optionally
+        prefixed by - to indicate negative filters.
+    /p: Set window position to x,y with size cx,cy, optional value max
+        set to nonzero to maximize window.
+
+
+  Tip: Adding Textview to the "Send To..." Menu
+
+  You can add Textview to the "Send To..." menu by creating a link to
+  Textview in your SendTo folder of your Windows-directory. Right-
+  clicking a file or folder in Explorer and selecting "Send To...
+  Textview" will open the selected file or directory in Textview.
+
+
+  Passing Command Line Options to Quickviewer and Editor
+
+  If you would like to pass some command line options to the quickview
+  and edit programs specified in the "Locations" property page, you can
+  use links to these programs and include the command line options in
+  the "Target" field of the link.
+
+
+  "Open with..." can copy Files
+
+  If you create a link to a folder and place it in the directory used
+  by the "Open with..." dialog, files and directories will be copied to
+  that folder when you choose it as the target for the "Open with..."
+  operation.
+
+
+  Limitations in Unicode and Mac Support
+
+  Full Unicode, UTF-8, UTF-7 and Mac support is only available on NT-
+  based Windows (NT/2k/XP). It's not possible to search the text for
+  extended characters. Copy to clipboard has full Unicode support.
+
+  Wider Unicode support on 9x-based systems (95/98/Me) can be enabled
+  using a registry flag explained in Textview.reg.
+
+  Some display problems might appear and are most probably caused by
+  mssing codepages or fonts. Try using the default codepage (Ctrl+0).
+
+
+Source Code
+
+  The full Textview source code is available at:
+  http://www.flos-freeware.ch
+
+
+Copyright
+
+  Textview is FREEWARE and may be used and distributed freely. Please
+  do not charge any distribution or download fees for this program,
+  except for the cost of the distribution medium. The use of the
+  software is AT YOUR OWN RISK.
+
+  If you have comments or questions, please drop me a note:
+  textview@bluewin.ch
+
+  (c) Florian Balmer 1996-2004
+
+###

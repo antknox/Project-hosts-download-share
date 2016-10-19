@@ -1,0 +1,6 @@
+--2016-10-18 18:46:11--  http://down.zdfans.com/hosts.txt
+Resolving down.zdfans.com... 222.73.144.182
+Connecting to down.zdfans.com|222.73.144.182|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2016-10-18 18:46:12 ERROR 404: Not Found.
+

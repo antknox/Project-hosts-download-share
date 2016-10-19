@@ -1,0 +1,162 @@
+REGEDIT4
+
+; Additional Settings for Textview
+;
+; Textview must be restarted after the values have been
+; imported to the registry.
+
+
+; Add Custom Filters for Textview to the Registry
+;
+; The filters are displayed in the drop-down menu of the filter dialog.
+; The menu-order is the same as in the list below. The & sign in the
+; filter description defines the hotkey. The - sign as a prefix marks
+; negative filters.
+
+[HKEY_CURRENT_USER\Software\Textview\Filters]
+"&All Files"="*.*"
+"&Windows Text Files"="*.txt;*.asc;*.bat;*.vbs;*.ini;*.inf;*.reg"
+"&HTML Related Files"="*.htm;*.html;*.shtml;*.xml;*.php;*.css;*.js;*.vbs;*.gif;*.png;*.jpg;*.jpeg"
+"&C/C++ Files"="*.c;*.cpp;*.h;*.hpp;*.rc;*.ico;*.cur;*.bmp;*.txt"
+"&No Binary Files"="-*.exe;*.dll;*.cpl;*.ocx"
+
+
+; Miscellaneous Options
+
+
+[HKEY_CURRENT_USER\Software\Textview\Settings]
+
+
+; Auto Refresh Rate
+; Filelist update interval, in 10 ms steps, hexadecimal basis.
+;
+; disable -> 00000000 (need to press F5 to update filelist)
+;  250 ms -> 00000019
+;  500 ms -> 00000032
+; 1000 ms -> 00000064
+; 2000 ms -> 000000c8
+; 3000 ms -> 0000012c
+; 5000 ms -> 000001f4
+
+"AutoRefreshRate"=dword:00000064
+
+
+; Open File URLs
+; Open file:// URLs directly in Textview.
+;
+; enabled  -> 00000001
+; disabled -> 00000000
+
+"OpenFileURLs"=dword:00000000
+
+
+; No Fade Hidden
+; Disable faded appearance of hidden and system files.
+;
+; enabled  -> 00000001
+; disabled -> 00000000
+
+"NoFadeHidden"=dword:00000000
+
+
+; Easy Change Drive
+; Automatically pop up drive selection dialog when pressing
+; backspace from a root directory. Useful when the drive box
+; is hidden.
+;
+; enabled  -> 00000001
+; disabled -> 00000000
+
+"EasyChangeDrive"=dword:00000001
+
+
+; Allow 9x Unicode
+; Enable Unicode display support on Windows 95/98/Me. This
+; can cause problems or even crashes if the required fonts
+; and codepages are not installed.
+;
+; enabled  -> 00000001
+; disabled -> 00000000
+
+"AllowWin9xUnicode"=dword:00000000
+
+
+; SpaceLucidaConsole
+; Set line spacing to 1.5x when using Lucida Console font. This
+; makes text more legible.
+;
+; enabled  -> 00000001
+; disabled -> 00000000
+
+"SpaceLucidaConsole"=dword:00000001
+
+
+; Textview Toolbar Button Customization
+;
+; The following settings can be used to customize the appearance of
+; the Textview toolbar buttons.
+
+
+; Toolbar Strings
+;
+; Remove the ; in front of each button you would like to display a text
+; description in addition to the image.
+
+[-HKEY_CURRENT_USER\Software\Textview\Toolbar Strings]
+[HKEY_CURRENT_USER\Software\Textview\Toolbar Strings]
+;"01"="Back"
+;"02"="Forward"
+;"03"="Up"
+;"04"="Root"
+;"05"="Directory"
+;"06"="Favorites"
+;"07"="----------"
+;"08"="Run"
+;"09"="Edit"
+;"10"="Quickview"
+;"11"="New"
+;"12"="Link"
+;"13"="Save As"
+;"14"="Copy/Move"
+;"15"="Recycle"
+;"16"="Properties"
+;"17"="----------"
+;"18"="Copy"
+;"19"="Add"
+;"20"="Find"
+;"21"="Find Next"
+;"22"="----------"
+;"23"="Zoom In"
+;"24"="Zoom Out"
+;"25"="Font"
+;"26"="Toggle Font"
+;"27"="----------"
+;"28"="Exit"
+;"29"="My Documents"
+;"30"="My Computer"
+;"31"="My Network"
+;"32"="Previous File"
+;"33"="Next File"
+;"34"="Recent File"
+;"35"="New Directory"
+;"36"="Add to Favorites"
+;"37"="Delete"
+;"38"="Rename"
+;"39"="Find Previous"
+;"40"="Filter"
+;"41"="Update Directory"
+;"42"="Reload File"
+;"43"="Settings"
+
+
+; Toolbar Bitmaps
+;
+; It's possible to use custom bitmaps for the Textview toolbar. See the
+; file Toolbar.bmp from the Textview source code package as a template.
+; Note: if you have created a nice set of toolbar buttons and would like
+; to release it to others, please drop me a note: textview@bluewin.ch.
+
+[HKEY_CURRENT_USER\Software\Textview\Settings]
+;"ToolbarBitmap"="Tools.bmp"
+;"ToolbarBitmapHot"="ToolsHot.bmp"
+;"ToolbarBitmapDisabled"="ToolsDisabled.bmp"

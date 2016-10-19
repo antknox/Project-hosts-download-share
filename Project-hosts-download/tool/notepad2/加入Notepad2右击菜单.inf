@@ -1,0 +1,10 @@
+[Version]
+Signature="$Windows NT$"
+;antknoxÖÆ×÷
+
+[DefaultInstall]
+AddReg=Notepad2
+
+[SublimeText2]
+hkcr,"*\\shell\\Notepad2\\command",,,"""%1%\Notepad2.exe"" ""%%1"" %%*"
+

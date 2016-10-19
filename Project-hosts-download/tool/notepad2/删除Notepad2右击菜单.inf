@@ -1,0 +1,9 @@
+[Version]
+Signature="$Windows NT$"
+;antknoxÖÆ×÷
+
+[DefaultInstall]
+DELREG=Notepad2
+
+[SublimeText2]
+hkcr,"*\\shell\\Notepad2"

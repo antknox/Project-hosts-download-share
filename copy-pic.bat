@@ -32,3 +32,6 @@ ren tmp "%date:~0,4%%date:~5,2%%date:~8,2%"
 :20161018
 :http://ww1.sinaimg.cn/large/66ebe593gw1f8wo7awrs9j20hn0a54qq.jpg
 
+:20161024
+:http://ww3.sinaimg.cn/large/66ebe593gw1f92o6t5bukj20fn09d4qq.jpg
+

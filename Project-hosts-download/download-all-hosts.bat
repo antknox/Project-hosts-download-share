@@ -16,9 +16,9 @@ echo 下载hosts列表
 .\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/txthinking/google-hosts/master/hosts -O .\hosts\google-hosts-txthinking
 .\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/headingy/adaway_hosts/master/hosts.txt -O .\hosts\hosts-ad
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest -O .\hosts\apnic-GFW-list
-.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt -O .\hosts\gfwlist.txt
+:.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt -O .\hosts\gfwlist.txt
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd http://adblock-chinalist.googlecode.com/svn/trunk/adblock.txt -O .\hosts\adblock.txt
-.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt -O .\hosts\easylistchina+easylist.txt
-.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt -O .\hosts\cjxlist.txt
-.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt -O .\hosts\cjx-annoyance.txt
+:.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt -O .\hosts\easylistchina+easylist.txt
+:.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt -O .\hosts\cjxlist.txt
+:.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt -O .\hosts\cjx-annoyance.txt
 

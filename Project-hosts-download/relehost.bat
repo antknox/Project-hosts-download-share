@@ -1,12 +1,19 @@
 @echo off&PUSHD %~DP0
 Rd "%WinDir%\system32\test_permissions" >NUL 2>NUL
-Md "%WinDir%\System32\test_permissions" 2>NUL||(Echo è¯·ä½¿ç”¨å³é”®ç®¡ç†å‘˜èº«ä»½è¿è¡Œï¼&&Pause >nul&&Exit)
+Md "%WinDir%\System32\test_permissions" 2>NUL||(Echo ÇëÊ¹ÓÃÓÒ¼ü¹ÜÀíÔ±Éí·ÝÔËÐÐ£¡&&Pause >nul&&Exit)
 Rd "%WinDir%\System32\test_permissions" 2>NUL
-title è¿˜åŽŸhostsæ–‡ä»¶
+title »¹Ô­hostsÎÄ¼þ
+
+:echo 1
+if not exist hosts-last-y copy "%~dp0hosts-bak\hosts-last-y" C:\Windows\System32\Drivers\etc
+:echo 2
+:if not exist C:\Windows\System32\Drivers\etc\hosts-last-y copy "%~dp0hosts-bak\hosts-last-y" C:\Windows\System32\Drivers\etc
+:echo 3
+:if not exist C:\Windows\System32\Drivers\etc\hosts-last-y copy .\hosts-bak\hosts-last-y C:\Windows\System32\Drivers\etc
+
 cd /d C:\Windows\System32\Drivers\etc
 ren hosts hosts-bak-"%date:~0,4%-%date:~5,2%-%date:~8,2%_%time:~0,2%-%time:~3,2%"
-if not exist hosts-last-y copy %~dp0hosts-bak\hosts-last-y" C:\Windows\System32\Drivers\etc
-:if not exist hosts-last-y copy D:\"Project hosts download"\hosts-bak\hosts-last-y C:\Windows\System32\Drivers\etc
+
 ren hosts-last-y hosts
 
 ipconfig /flushdns

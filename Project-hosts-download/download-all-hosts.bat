@@ -21,8 +21,8 @@ echo 下载hosts列表
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd http://down.zdfans.com/hosts.txt -O .\hosts\hosts-zdfans -o .\tool\wget\wget.log
 :D
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/liuker/hosts/master/hosts -O .\hosts\hosts-liuker
-:
-.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/txthinking/google-hosts/master/hosts -O .\hosts\google-hosts-txthinking
+:D
+:.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/txthinking/google-hosts/master/hosts -O .\hosts\google-hosts-txthinking
 :D
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/headingy/adaway_hosts/master/hosts.txt -O .\hosts\hosts-ad
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest -O .\hosts\apnic-GFW-list
@@ -32,4 +32,4 @@ echo 下载hosts列表
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt -O .\hosts\cjxlist.txt
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt -O .\hosts\cjx-annoyance.txt
 :ad
-.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts -O .\hosts\hosts-ad-StevenBlack
+:.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts -O .\hosts\hosts-ad-StevenBlack

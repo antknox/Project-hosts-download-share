@@ -1,3 +1,4 @@
+set path="D:\Program Files\WinRAR"
 rar a "Project-hosts-download.rar" "Project-hosts-download"
 
 ren *.png "Project-hosts-download.png"
@@ -41,3 +42,5 @@ ren tmp "%date:~0,4%%date:~5,2%%date:~8,2%"
 :20180209
 :https://ws1.sinaimg.cn/large/66ebe593gy1fo9lik3br0j20gw09mu0y.jpg
 
+:20180523
+:http://ww1.sinaimg.cn/large/66ebe593ly1frkoxe7abqj20ij0cou0y.jpg

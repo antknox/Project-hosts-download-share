@@ -47,3 +47,6 @@ ren tmp "%date:~0,4%%date:~5,2%%date:~8,2%"
 
 :20180611
 :http://ww1.sinaimg.cn/large/66ebe593gy1fs7gvtasvkj20h70c4npg.jpg
+
+:20180926
+:http://ww1.sinaimg.cn/large/66ebe593gy1fvn9464j2zj20hn0cdnpg.jpg

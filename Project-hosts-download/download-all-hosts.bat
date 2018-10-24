@@ -1,6 +1,7 @@
 @echo off
 title 下载hosts文件
 
+:e.g
 :wget -i .\list.txt -o .\wget.log
 :wget -t 10 -nd %DL% -O "%NM%.mp3"
 :ex
@@ -9,10 +10,18 @@ title 下载hosts文件
 if not exist hosts md hosts
 
 echo 下载hosts列表
+
+:==============================================================
+:ipv4
+:
+:.\tool\wget\wget.exe --no-check-certificate -t 10 -nd  -O .\hosts\hosts-ipv4-
+:==============================================================
+
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O .\hosts\hosts-racaljk
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts-files/hosts -O .\hosts\hosts-scaffrey
-:
-.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts -O .\hosts\hosts-googlehosts
+
+:googlehosts
+.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts -O .\hosts\hosts-ipv4-googlehosts
 :bak
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts-files/hosts -O .\hosts\hosts-googlehosts
 :D
@@ -33,3 +42,14 @@ echo 下载hosts列表
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt -O .\hosts\cjx-annoyance.txt
 :ad
 :.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts -O .\hosts\hosts-ad-StevenBlack
+
+
+:==============================================================
+:ipv6
+:
+:.\tool\wget\wget.exe --no-check-certificate -t 10 -nd  -O .\hosts\hosts-ipv6-
+:==============================================================
+
+:lennylxx
+.\tool\wget\wget.exe --no-check-certificate -t 10 -nd https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts -O .\hosts\hosts-ipv6-lennylxx
+
